@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Test Córdoba</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <!--Esto se encarga de segmentar el formulario en varias partes agrupadas en bloques-->
+    <fieldset>
+        <!--Con la leyenda podemos darle un nombre al bloque-->
+        <legend>Córdoba</legend>
+        <form>
+            <label>¿En qué año se consolidó la Mezquita de Córdoba?</label>
+                <input type="radio" name="año_mezquita">1371
+                <input type="radio" name="año_mezquita">788
+                <input type="radio" name="año_mezquita">952
+                <input type="radio" name="año_mezquita">832
+            <label>¿Qué precio tiene para los habitantes de Córdoba la visita a la Mezquita?</label>
+                <input type="radio" name="precio_mezquita">20€
+                <input type="radio" name="precio_mezquita">Gratis
+                <input type="radio" name="precio_mezquita">10€
+                <input type="radio" name="precio_mezquita">5€
+            <label>Número de munincipios Córdoba:</label>
+                <input type="radio" name="munincipios_cordoba">30
+                <input type="radio" name="munincipios_cordoba">77
+                <input type="radio" name="munincipios_cordoba">88
+                <input type="radio" name="munincipios_cordoba">100
+                <input type="radio" name="munincipios_cordoba">20
+            <!--Se podría no colocar aquí el nombre para el checkbox, pero considero que si posteriormente se envía a un programa para que sea procesado, es conveniente guardar su información.-->>    
+            <label>Munincipio/s mayores de 20.000 habitantes (seleccione varios si considera necesario):</label>
+                <input type="checkbox" name="munincipios_mayor_20000">Puente Genil    
+                <input type="checkbox" name="munincipios_mayor_20000">Fernán Nuñez    
+                <input type="checkbox" name="munincipios_mayor_20000">Puente Genil    
+                <input type="checkbox" name="munincipios_mayor_20000">Puente Genil    
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Puente Genil</legend>
+        <form>
+            <label>¿Cuándo se comenzó a poblar Miragenil?</label>
+                <input type="radio" name="poblar_miragenil">Sobre 1600
+                <input type="radio" name="poblar_miragenil">Sobre 1700
+                <input type="radio" name="poblar_miragenil">Sobre 1800
+                <input type="radio" name="poblar_miragenil">1920
+            <label>¿Cuando se edificó como puente de piedra el que le da nombre al pueblo?</label>
+                <input type="radio" name="fecha_puente">1730
+                <input type="radio" name="fecha_puente">1561
+                <input type="radio" name="fecha_puente">1891
+                <input type="radio" name="fecha_puente">1955
+            <label>Comunidades contiguas a Puente Genil:</label>
+                <input type="checkbox" name="comunidades_contiguas">Santaella
+                <input type="checkbox" name="comunidades_contiguas">Aguilar de la Frontera
+                <input type="checkbox" name="comunidades_contiguas">Cabra
+                <input type="checkbox" name="comunidades_contiguas">Estepa
+                <input type="checkbox" name="comunidades_contiguas">Herrera
+                <input type="checkbox" name="comunidades_contiguas">Lucena
+            <label>Lugares importantes pueblo:</label>
+                <input type="checkbox" name="lugares_importantes_pg">Teatro Circo    
+                <input type="checkbox" name="lugares_importantes_pg">Yacimiento Fuente Álamo    
+                <input type="checkbox" name="lugares_importantes_pg">Casas Palacio
+                <input type="checkbox" name="lugares_importantes_pg">Puente Unión sobre el Genil
+                <input type="checkbox" name="lugares_importantes_pg">Palacio de Cristal
+                <input type="checkbox" name="lugares_importantes_pg">Parque del Capricho
+                <input type="checkbox" name="lugares_importantes_pg">Confitería Miragenil
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>-- EXTRA: Web Ayuntamiento --</legend>
+        <form>
+            <label>Ayúdanos a mejorar, ¿qué considera que podría modificarse o ampliarse?</label>
+                <input type="checkbox">Diseño
+                <input type="checkbox">Más información
+                <input type="checkbox">Falta de claridad
+                <input type="checkbox">Facilidad contacto
+                <input type="checkbox">Poco intuitivo
+            <label>¿Está contento/a en general con la web?</label>
+                <input type="radio" name="content@_web">Sí, bastante
+                <input type="radio" name="content@_web">No, nada en absoluto
+                <input type="radio" name="content@_web">Sí, aunque podría mejorar
+                <input type="radio" name="content@_web">No tengo opinión sobre ello
+            <label>Última fecha que ha visitado el pueblo:</label>
+                <input type="date">    
+            <label>Si desea añadir un comentario escriba aquí lo que desee:</label>
+                <textarea id="comentario" name="mejora_web_usuario" cols="20" rows="50" placeholder="Escriba aquí su comentario:"></textarea>    
+        </form>
+    </fieldset>
+</body>
+</html>
