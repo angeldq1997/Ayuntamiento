@@ -74,11 +74,18 @@
                 <input type="checkbox">Falta de claridad
                 <input type="checkbox">Facilidad contacto
                 <input type="checkbox">Poco intuitivo
-            <br><br><label>¿Está contento/a en general con la web?</label>
-                <br><input type="radio" name="content@_web">Sí, bastante
-                <br><input type="radio" name="content@_web">No, nada en absoluto
-                <br><input type="radio" name="content@_web">Sí, aunque podría mejorar
-                <br><input type="radio" name="content@_web">No tengo opinión sobre ello
+            <select>
+                <br><br><label>¿Está contento/a en general con la web?</label>
+                <optgroup label="SÍ">
+                    <br><option name="content@_web">Bastante
+                    <br><option name="content@_web">Un poco
+                    <br><option name="content@_web">Aunque podría mejorar
+                </optgroup>
+                <optgroup label="NO">
+                    <br><option name="content@_web">Nada en absoluto
+                    <br><option name="content@_web">Veo varios aspectos mejorables
+                </optgroup>
+            </select>
             <br><br><label>Última fecha que ha visitado el pueblo:</label>
                 <input type="date">    
             <br><br><label>Si desea añadir un comentario escriba aquí lo que desee:</label>
